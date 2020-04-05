@@ -1,0 +1,22 @@
+h1 {
+    color: red;
+}
+
+body {
+    background-color: green;
+}
+
+p {
+    color: orange;
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breakfast-recipes {
+    background: yellow;
+    margin: 40px;
+    padding: 20px;
+}
