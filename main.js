@@ -32,9 +32,8 @@ const breakfastRecipes = [
 // for loop to iterate through array of objects also adding HTML to be able to style
     for (let i =0; i<breakfastRecipes.length; i+=1) { //for this array iterate through it
         let breakfastRecc = breakfastRecipes[i]; //define constant for each iteration
-//        for (let prop in breakfastRecc) { //for each object in the array let prop = the key
             htmlBreakfastRecipes+= `<div class="breakfast-recipes">`;
-            htmlBreakfastRecipes += `<h2>${breakfastRecipes[i].title}</h2>`;
+            htmlBreakfastRecipes += `<h2>${breakfastRecc.title}</h2>`;
             htmlBreakfastRecipes += `<img src= "${breakfastRecc.image}">`;
             htmlBreakfastRecipes += `<h3>${breakfastRecc.time}</h3>`;
             htmlBreakfastRecipes += `<h4>${breakfastRecc.ingredients.join(', ')}</h4>`;
