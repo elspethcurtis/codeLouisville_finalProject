@@ -3,7 +3,7 @@
 const breakfastRecipes = [
     {
         title: "pancakes 1",
-        image: "img/pancakes.jpeg",
+        image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'https://www.google.com'
@@ -11,7 +11,7 @@ const breakfastRecipes = [
     
     {
         title: "pancakes 2",
-        image: "img/pancakes.jpeg",
+        image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 2 link'
@@ -19,7 +19,7 @@ const breakfastRecipes = [
     
     {
         title: "pancakes 3",
-        image: "img/pancakes.jpeg",
+        image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 3 link'
@@ -28,7 +28,8 @@ const breakfastRecipes = [
 
     
 //build up html function to be called for each array of recipes so I won't have to rewrite code for each category
-let htmlRecipes = ""; //set to empty string
+
+let htmlRecipes = ""; //set to empty string and for scope purposes declare outside of function 
 
 function buildUpHtml(recipeCategory) {
             htmlRecipes+= `<div class="html-recipes">`;
@@ -39,7 +40,6 @@ function buildUpHtml(recipeCategory) {
             htmlRecipes += `<button href=${recipeCategory.recipe}>See Recipe</button>`;
             htmlRecipes += `</div>`;
 }
-    
 
 // for loop to iterate through array/category of objects/recipes
     for (let i =0; i<breakfastRecipes.length; i+=1) { //for this array iterate through it
