@@ -37,7 +37,7 @@ function buildUpHtml(recipeCategory) {
             htmlRecipes += `<img src= "${recipeCategory.image}">`;
             htmlRecipes += `<h3>${recipeCategory.time}</h3>`;
             htmlRecipes += `<h4>${recipeCategory.ingredients.join(', ')}</h4>`;
-            htmlRecipes += `<button href=${recipeCategory.recipe}>See Recipe</button>`;
+            htmlRecipes += `<a href=${recipeCategory.recipe}>Recipe Details</a>`;
             htmlRecipes += `</div>`;
 }
 
