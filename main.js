@@ -27,22 +27,27 @@ const breakfastRecipes = [
 ]
 
     
-    let htmlBreakfastRecipes = ""; //set to empty string
+//build up html function to be called for each array of recipes so I won't have to rewrite code for each category
+let htmlRecipes = ""; //set to empty string
 
-// for loop to iterate through array of objects also adding HTML to be able to style
+function buildUpHtml(recipeCategory) {
+            htmlRecipes+= `<div class="html-recipes">`;
+            htmlRecipes += `<h2>${recipeCategory.title}</h2>`;
+            htmlRecipes += `<img src= "${recipeCategory.image}">`;
+            htmlRecipes += `<h3>${recipeCategory.time}</h3>`;
+            htmlRecipes += `<h4>${recipeCategory.ingredients.join(', ')}</h4>`;
+            htmlRecipes += `<button href=${recipeCategory.recipe}>See Recipe</button>`;
+            htmlRecipes += `</div>`;
+}
+    
+
+// for loop to iterate through array/category of objects/recipes
     for (let i =0; i<breakfastRecipes.length; i+=1) { //for this array iterate through it
         let breakfastRecc = breakfastRecipes[i]; //define constant for each iteration
-            htmlBreakfastRecipes+= `<div class="breakfast-recipes">`;
-            htmlBreakfastRecipes += `<h2>${breakfastRecc.title}</h2>`;
-            htmlBreakfastRecipes += `<img src= "${breakfastRecc.image}">`;
-            htmlBreakfastRecipes += `<h3>${breakfastRecc.time}</h3>`;
-            htmlBreakfastRecipes += `<h4>${breakfastRecc.ingredients.join(', ')}</h4>`;
-            htmlBreakfastRecipes += `<button href=${breakfastRecc.recipe}>See Recipe</button>`;
-            htmlBreakfastRecipes += `</div>`;
-//        }
+        buildUpHtml(breakfastRecc);
     }
 
 //display to page
 const recipesDiv = document.querySelector('.recipes');
-recipesDiv.innerHTML = htmlBreakfastRecipes;
+recipesDiv.innerHTML = htmlRecipes;
 
