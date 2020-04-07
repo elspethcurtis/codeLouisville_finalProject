@@ -6,7 +6,8 @@ const breakfastRecipes = [
         image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
-        recipe: 'https://www.google.com'
+        recipe: 'https://www.google.com',
+        htmlClass: 'breakfast recipe'
     },
     
     {
@@ -14,7 +15,8 @@ const breakfastRecipes = [
         image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 2 link'
+        recipe: 'pancakes 2 link',
+        htmlClass: 'breakfast recipe'
     },
     
     {
@@ -22,7 +24,8 @@ const breakfastRecipes = [
         image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link'
+        recipe: 'pancakes 3 link',
+        htmlClass: 'breakfast recipe'
     }
 ]
 
@@ -32,7 +35,8 @@ const lunchRecipes = [
         image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
-        recipe: 'https://www.google.com'
+        recipe: 'https://www.google.com',
+        htmlClass:'lunch recipe'
     },
     
     {
@@ -40,7 +44,8 @@ const lunchRecipes = [
         image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 2 link'
+        recipe: 'pancakes 2 link',
+        htmlClass:'lunch recipe'
     },
     
     {
@@ -48,7 +53,8 @@ const lunchRecipes = [
         image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link'
+        recipe: 'pancakes 3 link',
+        htmlClass:'lunch recipe'
     }
 ]
 
@@ -58,7 +64,8 @@ const dinnerRecipes = [
         image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
-        recipe: 'https://www.google.com'
+        recipe: 'https://www.google.com',
+        htmlClass:'dinner recipe'
     },
     
     {
@@ -66,7 +73,7 @@ const dinnerRecipes = [
         image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 2 link'
+        htmlClass:'dinner recipe'
     },
     
     {
@@ -74,7 +81,8 @@ const dinnerRecipes = [
         image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link'
+        recipe: 'pancakes 3 link',
+        htmlClass:'dinner recipe'
     }
 ]
 
@@ -84,7 +92,8 @@ const desertRecipes = [
         image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
-        recipe: 'https://www.google.com'
+        recipe: 'https://www.google.com',
+        htmlClass:'desert recipe'
     },
     
     {
@@ -92,7 +101,8 @@ const desertRecipes = [
         image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 2 link'
+        recipe: 'pancakes 2 link',
+        htmlClass:'desert recipe'
     },
     
     {
@@ -100,7 +110,8 @@ const desertRecipes = [
         image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link'
+        recipe: 'pancakes 3 link',
+        htmlClass:'desert recipe'
     }
 ]
     
@@ -109,7 +120,7 @@ const desertRecipes = [
 let htmlRecipes = ""; //set to empty string and for scope purposes declare outside of function 
 
 function buildUpHtml(recipeCategory) {
-            htmlRecipes+= `<div class="html-recipes">`;
+            htmlRecipes+= `<div class="${recipeCategory.htmlClass}">`;
             htmlRecipes += `<h2>${recipeCategory.title}</h2>`;
             htmlRecipes += `<img src= "${recipeCategory.image}">`;
             htmlRecipes += `<h3>${recipeCategory.time}</h3>`;
@@ -117,6 +128,7 @@ function buildUpHtml(recipeCategory) {
             htmlRecipes += `<a href=${recipeCategory.recipe}>Recipe Details</a>`;
             htmlRecipes += `</div>`;
 }
+
 
 // define all constants for buttons
     const breakfastButton = document.querySelector('.breakfast-button');
@@ -145,7 +157,7 @@ function buildUpHtml(recipeCategory) {
     }
 
 })
-//
+
 ////if dinner button is clicked show dinner recipes
 //
     dinnerButton.addEventListener('click', () => {
@@ -158,7 +170,6 @@ function buildUpHtml(recipeCategory) {
 
 })
 
-//
 //
 ////if desert button is clicked show desert recipes 
 //        
