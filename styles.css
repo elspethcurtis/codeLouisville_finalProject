@@ -14,6 +14,21 @@ p {
     color: orange;
 }
 
+.recipe-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.item {
+    margin: 20px;
+}
+
 .recipes {
     display: flex;
     flex-wrap: wrap;
@@ -27,4 +42,8 @@ p {
 
 img {
     width: 300px;
+}
+
+.circle {
+    border-radius: 50%;
 }
