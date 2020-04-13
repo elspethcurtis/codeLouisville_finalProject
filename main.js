@@ -114,71 +114,132 @@ const desertRecipes = [
         htmlClass:'desert recipe'
     }
 ]
-    
-//build up html function to be called for each array of recipes so I won't have to rewrite code for each category
 
-let htmlRecipes = ""; //set to empty string and for scope purposes declare outside of function 
+const sidesRecipes = [
+    {
+        title: "side 1",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'https://www.google.com',
+        htmlClass:'desert recipe'
+    },
+    
+    {
+        title: "side 2",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'pancakes 2 link',
+        htmlClass:'desert recipe'
+    },
+    
+    {
+        title: "side 3",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'pancakes 3 link',
+        htmlClass:'desert recipe'
+    }
+]
+
+const cocktailsRecipes = [
+    {
+        title: "cocktail 1",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'https://www.google.com',
+        htmlClass:'desert recipe'
+    },
+    
+    {
+        title: "cocktail 2",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'pancakes 2 link',
+        htmlClass:'desert recipe'
+    },
+    
+    {
+        title: "cocktail 3",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'pancakes 3 link',
+        htmlClass:'desert recipe'
+    }
+]
+    
+//build up html function to be called for each array of recipes so I won't have to rewrite code for each category. Note it is important that this function returns a value.This allows me to define constants equal to the function with a particular parameter.
 
 function buildUpHtml(recipeCategory) {
-            htmlRecipes+= `<div class="${recipeCategory.htmlClass}">`;
+            let htmlRecipes = `<div class="${recipeCategory.htmlClass}">`;
             htmlRecipes += `<h2>${recipeCategory.title}</h2>`;
             htmlRecipes += `<img src= "${recipeCategory.image}">`;
             htmlRecipes += `<h3>${recipeCategory.time}</h3>`;
             htmlRecipes += `<h4>${recipeCategory.ingredients.join(', ')}</h4>`;
             htmlRecipes += `<a href=${recipeCategory.recipe}>Recipe Details</a>`;
             htmlRecipes += `</div>`;
+    
+    return htmlRecipes
 }
 
-
+//function to display each set of recipes
+function display(recipeCategory) {
+    const recipesDiv = document.querySelector('.recipes');
+    let categoryHTML = '';
+    for (let i =0; i<recipeCategory.length; i+=1) { //for this array iterate through it
+            let mealRecc = recipeCategory[i]; //define constant for each iteration
+            categoryHTML += buildUpHtml(mealRecc);
+            recipesDiv.innerHTML = categoryHTML;
+}
+}
 // define all constants for buttons
     const breakfastButton = document.querySelector('.breakfast-button');
     const lunchButton = document.querySelector('.lunch-button');
     const dinnerButton = document.querySelector('.dinner-button');
     const desertButton = document.querySelector('.desert-button');
+    const sidesButton = document.querySelector('.sides-button');
+    const cocktailsButton = document.querySelector('.cocktails-button');
     
 //if breakfast button is clicked show breakfast recipes 
     breakfastButton.addEventListener('click', () => {
-            for (let i =0; i<breakfastRecipes.length; i+=1) { //for this array iterate through it
-            let breakfastRecc = breakfastRecipes[i]; //define constant for each iteration
-            buildUpHtml(breakfastRecc);
-            const recipesDiv = document.querySelector('.recipes');
-            recipesDiv.innerHTML = htmlRecipes;
-    }
+        display(breakfastRecipes);
     })
 
 //if lunch button is clicked show lunch recipes 
 
     lunchButton.addEventListener('click', () => {
-            for (let i =0; i<lunchRecipes.length; i+=1) { //for this array iterate through it
-            let lunchRecc = lunchRecipes[i]; //define constant for each iteration
-            buildUpHtml(lunchRecc);
-            const recipesDiv = document.querySelector('.recipes');
-            recipesDiv.innerHTML = htmlRecipes;
-    }
-
+        display(lunchRecipes);
 })
 
 ////if dinner button is clicked show dinner recipes
-//
+
     dinnerButton.addEventListener('click', () => {
-            for (let i =0; i<dinnerRecipes.length; i+=1) { //for this array iterate through it
-            let dinnerRecc = dinnerRecipes[i]; //define constant for each iteration
-            buildUpHtml(dinnerRecc);
-            const recipesDiv = document.querySelector('.recipes');
-            recipesDiv.innerHTML = htmlRecipes;
-    }
+        display(dinnerRecipes);
+})
+
+
+////if desert button is clicked show desert recipes 
+
+    desertButton.addEventListener('click', () => {
+        display(desertRecipes);
 
 })
 
-//
+////if sides button is clicked show sides recipes 
+
+    sidesButton.addEventListener('click', () => {
+        display(sidesRecipes);
+
+})
+
 ////if desert button is clicked show desert recipes 
-//        
-    desertButton.addEventListener('click', () => {
-            for (let i =0; i<desertRecipes.length; i+=1) { //for this array iterate through it
-            let desertRecc = desertRecipes[i]; //define constant for each iteration
-            buildUpHtml(desertRecc);
-            const recipesDiv = document.querySelector('.recipes');
-            recipesDiv.innerHTML = htmlRecipes;
-    }
+
+    cocktailsButton.addEventListener('click', () => {
+        display(cocktailsRecipes);
 
 })

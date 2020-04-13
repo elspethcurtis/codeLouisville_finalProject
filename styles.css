@@ -3,47 +3,145 @@
 }
 
 h1 {
-    color: red;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
 }
+
+h2 {
+    margin-bottom: 0;
+
+
+}
+
+header,
+footer {
+    background: lightblue;
+    padding: 20px;
+    color: darkblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-icon {
+    flex-basis: 100%;
+}
+
+.welcome {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 
 body {
-    background-color: green;
+    background-color: ;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-p {
-    color: orange;
-}
+
 
 .recipe-categories {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-}
-
-button {
-    margin-top: 20px;
+    flex:1;
 }
 
 .item {
-    margin: 20px;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    background-image: url(img/pancake.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: black 2px solid;
+}
+
+button {
+    margin-bottom: 30px;
 }
 
 .recipes {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
 }
 
 .recipe {
-    background: yellow;
-    margin: 40px;
+    background: ;
+    justify-content: center;
+    margin: 10px;
     padding: 20px;
+    width: 40%;
+    border: black 2px solid;
 }
 
 img {
-    width: 200px;
+    display: none;
+    height: auto;
+    
 }
 
 .circle {
     border-radius: 50%;
+}
+
+@media (min-width: 769px) {
+    
+    h1 {
+        text-align: left;
+    }
+    
+    .item {
+        width: 50%;
+        background: white;
+    }
+    
+    img {
+        display: inline-block;
+        width: 40%;
+    }
+    
+    button {
+    margin-top: 20px;
+}
+    header {
+        justify-content: space-between;
+    }
+    
+    .nav-icon{
+        flex-basis: auto;
+    }
+    
+    .welcome {
+        align-items: center;
+        border-bottom: black 2px solid;
+    }
+    
+    .welcome h2 {
+        flex-basis: 100%;
+        text-align: center;
+}
+    .welcome p {
+        max-width: 400px;
+    }
+
+@media (min-width: 960px) {
+    .item {
+        width: 30%;
+    }
+    
+    img {
+        width: 75%;
+    }
 }
