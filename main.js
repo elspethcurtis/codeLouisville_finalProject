@@ -7,7 +7,7 @@ const breakfastRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'https://www.google.com',
-        htmlClass: 'breakfast recipe'
+        htmlClass: 'breakfast recipeJS'
     },
     
     {
@@ -16,7 +16,7 @@ const breakfastRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 2 link',
-        htmlClass: 'breakfast recipe'
+        htmlClass: 'breakfast recipeJS'
     },
     
     {
@@ -25,7 +25,7 @@ const breakfastRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 3 link',
-        htmlClass: 'breakfast recipe'
+        htmlClass: 'breakfast recipeJS'
     }
 ]
 
@@ -36,7 +36,7 @@ const lunchRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'https://www.google.com',
-        htmlClass:'lunch recipe'
+        htmlClass:'lunch recipeJS'
     },
     
     {
@@ -45,7 +45,7 @@ const lunchRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 2 link',
-        htmlClass:'lunch recipe'
+        htmlClass:'lunch recipeJS'
     },
     
     {
@@ -54,7 +54,7 @@ const lunchRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 3 link',
-        htmlClass:'lunch recipe'
+        htmlClass:'lunch recipeJS'
     }
 ]
 
@@ -65,7 +65,7 @@ const dinnerRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'https://www.google.com',
-        htmlClass:'dinner recipe'
+        htmlClass:'dinner recipeJS'
     },
     
     {
@@ -73,7 +73,7 @@ const dinnerRecipes = [
         image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
-        htmlClass:'dinner recipe'
+        htmlClass:'dinner recipeJS'
     },
     
     {
@@ -82,7 +82,7 @@ const dinnerRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 3 link',
-        htmlClass:'dinner recipe'
+        htmlClass:'dinner recipeJS'
     }
 ]
 
@@ -93,7 +93,7 @@ const desertRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'https://www.google.com',
-        htmlClass:'desert recipe'
+        htmlClass:'desert recipeJS'
     },
     
     {
@@ -102,7 +102,7 @@ const desertRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 2 link',
-        htmlClass:'desert recipe'
+        htmlClass:'desert recipeJS'
     },
     
     {
@@ -111,7 +111,7 @@ const desertRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 3 link',
-        htmlClass:'desert recipe'
+        htmlClass:'desert recipeJS'
     }
 ]
 
@@ -122,7 +122,7 @@ const sidesRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'https://www.google.com',
-        htmlClass:'desert recipe'
+        htmlClass:'desert recipeJS'
     },
     
     {
@@ -131,7 +131,7 @@ const sidesRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 2 link',
-        htmlClass:'desert recipe'
+        htmlClass:'desert recipeJS'
     },
     
     {
@@ -140,7 +140,7 @@ const sidesRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 3 link',
-        htmlClass:'desert recipe'
+        htmlClass:'desert recipeJS'
     }
 ]
 
@@ -151,7 +151,7 @@ const cocktailsRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'https://www.google.com',
-        htmlClass:'desert recipe'
+        htmlClass:'desert recipeJS'
     },
     
     {
@@ -160,7 +160,7 @@ const cocktailsRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 2 link',
-        htmlClass:'desert recipe'
+        htmlClass:'desert recipeJS'
     },
     
     {
@@ -169,7 +169,7 @@ const cocktailsRecipes = [
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 3 link',
-        htmlClass:'desert recipe'
+        htmlClass:'desert recipeJS'
     }
 ]
     
@@ -189,7 +189,7 @@ function buildUpHtml(recipeCategory) {
 
 //function to display each set of recipes
 function display(recipeCategory) {
-    const recipesDiv = document.querySelector('.recipes');
+    const recipesDiv = document.querySelector('.recipesHTML');
     let categoryHTML = '';
     for (let i =0; i<recipeCategory.length; i+=1) { //for this array iterate through it
             let mealRecc = recipeCategory[i]; //define constant for each iteration
