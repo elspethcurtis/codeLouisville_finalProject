@@ -10,6 +10,11 @@ h1 {
 }
 */
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 body {
     background-color: ;
     margin: 0;
@@ -23,11 +28,14 @@ header,
 footer {
     background: lightblue;
     padding: 20px;
-    color: darkblue;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+}
+
+header {
+        box-shadow: 2px  2px 2px black;
 }
 
 .nav-icon {
@@ -70,7 +78,8 @@ footer {
     flex-basis: 100%;
 }
 
-.item a {
+.item a,
+.jump-button {
 /*    border:black 2px solid;*/
     padding: 5px;
     margin-top: 5px;
@@ -84,9 +93,6 @@ footer {
     flex-basis: 50%;
 }
 
-button {
-    margin-bottom: 30px;
-}
 
 #recipesHTML {
     display: flex;
@@ -94,6 +100,18 @@ button {
     margin: 0;
     padding: 0;
     justify-content: center;
+}
+
+.jumpDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.jump-button {
+    text-align: center;
+    flex-basis: 20%;
+    margin: 20px;
+    
 }
 
 .recipeJS {
