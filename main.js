@@ -189,7 +189,7 @@ function buildUpHtml(recipeCategory) {
 
 //function to display each set of recipes
 function display(recipeCategory) {
-    const recipesDiv = document.querySelector('.recipesHTML');
+    const recipesDiv = document.querySelector('#recipesHTML');
     let categoryHTML = '';
     for (let i =0; i<recipeCategory.length; i+=1) { //for this array iterate through it
             let mealRecc = recipeCategory[i]; //define constant for each iteration

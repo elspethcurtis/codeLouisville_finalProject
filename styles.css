@@ -16,6 +16,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 header,
@@ -53,20 +54,41 @@ footer {
 }
 
 .item {
-    margin: 0;
+    margin-bottom: 0;
     padding: 0;
     width: 50%;
     background-image: url(img/pancake.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom: black 2px solid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item h2 {
+    flex-basis: 100%;
+}
+
+.item a {
+/*    border:black 2px solid;*/
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: lightblue;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 2px  2px 2px black;
+    align-content: center;
+    flex-basis: 50%;
 }
 
 button {
     margin-bottom: 30px;
 }
 
-.recipesHTML {
+#recipesHTML {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -103,11 +125,13 @@ img {
     .item {
         width: 50%;
         background: white;
+        padding-bottom: 20px;
     }
     
     img {
         display: inline-block;
-        width: 40%;
+        width: 75%;
+        margin-bottom: 20px;
     }
     
     button {
