@@ -179,9 +179,9 @@ function buildUpHtml(recipeCategory) {
             let htmlRecipes = `<div class="${recipeCategory.htmlClass}">`;
             htmlRecipes += `<h2>${recipeCategory.title}</h2>`;
             htmlRecipes += `<img src= "${recipeCategory.image}">`;
-            htmlRecipes += `<h3>${recipeCategory.time}</h3>`;
-            htmlRecipes += `<h4>${recipeCategory.ingredients.join(', ')}</h4>`;
-            htmlRecipes += `<a href=${recipeCategory.recipe}>Recipe Details</a>`;
+            htmlRecipes += `<h3><i class="far fa-clock"></i> ${recipeCategory.time}</h3>`;
+            htmlRecipes += `<h4><i class="fas fa-shopping-basket"></i> ${recipeCategory.ingredients.join(', ')}</h4>`;
+            htmlRecipes += `<a href=${recipeCategory.recipe}> <i class="fas fa-link"></i> Recipe Details</a>`;
             htmlRecipes += `</div>`;
     
     return htmlRecipes
@@ -204,6 +204,7 @@ function display(recipeCategory) {
     const desertButton = document.querySelector('.desert-button');
     const sidesButton = document.querySelector('.sides-button');
     const cocktailsButton = document.querySelector('.cocktails-button');
+    const jumpButton = document.querySelector('.jump-button');
     
 //if breakfast button is clicked show breakfast recipes 
     breakfastButton.addEventListener('click', () => {
@@ -243,3 +244,10 @@ function display(recipeCategory) {
         display(cocktailsRecipes);
 
 })
+
+
+////if jump button is clicked hide all recipes
+    jumpButton.addEventListener('click', () => {
+        const recipesDiv = document.querySelector('#recipesHTML');
+        recipesDiv.innerHTML = '';
+    })

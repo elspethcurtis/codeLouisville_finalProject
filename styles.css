@@ -10,11 +10,7 @@ h1 {
 }
 */
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
+/*GENERAL PAGE*/
 body {
     background-color: ;
     margin: 0;
@@ -23,6 +19,38 @@ body {
     flex-direction: column;
     font-family: 'Ubuntu Condensed', sans-serif;
 }
+
+/*link styles*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    display: none;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (min-width: 769px) {
+    img {
+        display: inline-block;
+        width: 75%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 960px) {
+    img {
+        width: 75%;
+    }
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+/*HEADER*/
 
 header,
 footer {
@@ -38,123 +66,13 @@ header {
         box-shadow: 2px  2px 2px black;
 }
 
+/*have title take up whole line*/
 .nav-icon {
     flex-basis: 100%;
 }
 
-.welcome {
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/*RECIPE-CATEGORIES SECTION*/
-
-.recipe-categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    flex:1;
-}
-
-.item {
-    margin-bottom: 0;
-    padding: 0;
-    width: 50%;
-    background-image: url(img/pancake.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-bottom: black 2px solid;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.item h2 {
-    flex-basis: 100%;
-}
-
-.item a,
-.jump-button {
-/*    border:black 2px solid;*/
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    background: lightblue;
-    text-decoration: none;
-    color: black;
-    border-radius: 8px;
-    box-shadow: 2px  2px 2px black;
-    align-content: center;
-    flex-basis: 50%;
-}
-
-
-#recipesHTML {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-}
-
-.jumpDiv{
-    display: flex;
-    justify-content: center;
-}
-
-.jump-button {
-    text-align: center;
-    flex-basis: 20%;
-    margin: 20px;
-    
-}
-
-.recipeJS {
-    background: ;
-    justify-content: center;
-    margin: 10px;
-    padding: 20px;
-    width: 40%;
-    border: black 2px solid;
-}
-
-img {
-    display: none;
-    height: auto;
-    
-}
-
-.circle {
-    border-radius: 50%;
-}
-
-/*MEDIA QUERIES*/
 @media (min-width: 769px) {
-    
-    h1 {
-        text-align: left;
-    }
-    
-    .item {
-        width: 50%;
-        background: white;
-        padding-bottom: 20px;
-    }
-    
-    img {
-        display: inline-block;
-        width: 75%;
-        margin-bottom: 20px;
-    }
-    
-    button {
-    margin-top: 20px;
-}
+
     header {
         justify-content: space-between;
     }
@@ -162,6 +80,31 @@ img {
     .nav-icon{
         flex-basis: auto;
     }
+    
+    h1 {
+        text-align: left;
+    }
+}
+
+/*END HEADER*/
+
+/*WELCOME PARAGRAPH*/
+.welcome {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h2 {
+    margin-bottom: 0;
+}
+
+.welcome p {
+    margin-bottom: 30px;
+}
+@media (min-width: 769px) {
     
     .welcome {
         align-items: center;
@@ -175,13 +118,150 @@ img {
     .welcome p {
         max-width: 400px;
     }
+}
+/*END WELCOME PARAGRAPH*/
+
+/*RECIPE-CATEGORIES SECTION*/
+
+.recipe-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    flex:1;
+}
+
+/*styles for each recipe category item*/
+.item {
+    margin-bottom: 0;
+    padding: 0;
+    width: 50%;
+    background-image: url(img/pancake.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: black 2px solid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.breakfast {
+    background-image: url(img/breakfast.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lunch {
+    background-image: url(img/lunch.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dinner {
+    background-image: url(img/dinner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.desert {
+    background-image: url(img/cake.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.side {
+    background-image: url(img/side.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cocktail {
+    background-image: url(img/cocktail.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 769px) {
+    
+    .item {
+        width: 50%;
+        background: white;
+        padding-bottom: 20px;
+    }
+}
+
+.item h2 {
+    flex-basis: 100%;
+}
 
 @media (min-width: 960px) {
     .item {
         width: 30%;
     }
-    
-    img {
-        width: 75%;
+}
+
+.item a,
+.jump-button {
+/*    border:black 2px solid;*/
+    padding: 5px 20%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: lightblue;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 2px  2px 2px black;
+    align-content: center;
+    flex-basis: 50%;
+}
+
+button {
+    width: 100%;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/*END RECIPE CATEGORIES SECTION*/
+
+/*START RECIPE SECTION*/
+#recipesHTML {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+@media (min-width: 769px) {
+    #recipesHTML img {
+        box-shadow: 2px  2px 2px black;
     }
+}
+
+/*styles for jump to top div and button*/
+.jumpDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.jump-button {
+    text-align: center;
+    flex-basis: 20%;
+    margin: 20px;
+    padding: 5px 20%;
+}
+
+/*styles for each recipe*/
+.recipeJS {
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+    width: 40%;
+    border: black 2px solid;
+    border-radius: 8px;
 }
