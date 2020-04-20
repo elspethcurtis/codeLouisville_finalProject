@@ -2,14 +2,6 @@
     box-sizing: border-box;
 }
 
-/*
-h1 {
-    text-align: center;
-    margin: 0;
-    padding: 15px;
-}
-*/
-
 /*GENERAL PAGE*/
 body {
     background-color: ;
@@ -24,7 +16,7 @@ body {
 a {
     text-decoration: none;
 }
-
+/*image styles*/
 img {
     display: none;
     height: auto;
@@ -49,7 +41,7 @@ img {
     border-radius: 50%;
 }
 
-/*HEADER*/
+/*HEADER and FOOTER*/
 
 header,
 footer {
