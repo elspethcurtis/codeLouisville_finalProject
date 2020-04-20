@@ -58,7 +58,6 @@ header a {
     color: white;
 }
 
-
 header {
         box-shadow: 0px  8px 8px gray;
 }
@@ -173,8 +172,6 @@ header {
     margin-top: 0;
 }
 
-
-
 @media (min-width: 769px) {
     
     .item {
@@ -231,7 +228,7 @@ button {
 
 /*END RECIPE CATEGORIES SECTION*/
 
-/*START RECIPE SECTION*/
+/*START RECIPE DIV SECTION*/
 #recipesHTML {
     display: flex;
     flex-wrap: wrap;
