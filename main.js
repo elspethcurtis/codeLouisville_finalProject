@@ -209,18 +209,21 @@ function display(recipeCategory) {
 //if breakfast button is clicked show breakfast recipes 
     breakfastButton.addEventListener('click', () => {
         display(breakfastRecipes);
+        $('#recipesHTML').prepend('<h2 class="recipeHeader">Breakfast Recipes</h2>'); //added jquery to be able to prepend html <h2> tag
     })
 
 //if lunch button is clicked show lunch recipes 
 
     lunchButton.addEventListener('click', () => {
         display(lunchRecipes);
+        $('#recipesHTML').prepend('<h2 class="recipeHeader">Lunch Recipes</h2>');
 })
 
 ////if dinner button is clicked show dinner recipes
 
     dinnerButton.addEventListener('click', () => {
         display(dinnerRecipes);
+        $('#recipesHTML').prepend('<h2 class="recipeHeader">Dinner Recipes</h2>');
 })
 
 
@@ -228,6 +231,7 @@ function display(recipeCategory) {
 
     desertButton.addEventListener('click', () => {
         display(desertRecipes);
+        $('#recipesHTML').prepend('<h2 class="recipeHeader">Desert Recipes</h2>');
 
 })
 
@@ -235,6 +239,7 @@ function display(recipeCategory) {
 
     sidesButton.addEventListener('click', () => {
         display(sidesRecipes);
+        $('#recipesHTML').prepend('<h2 class="recipeHeader">Side Recipes</h2>');
 
 })
 
@@ -242,6 +247,7 @@ function display(recipeCategory) {
 
     cocktailsButton.addEventListener('click', () => {
         display(cocktailsRecipes);
+        $('#recipesHTML').prepend('<h2 class="recipeHeader">Cocktail Recipes</h2>');
 
 })
 

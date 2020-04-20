@@ -23,7 +23,6 @@ body {
 /*link styles*/
 a {
     text-decoration: none;
-    color: black;
 }
 
 img {
@@ -54,7 +53,8 @@ img {
 
 header,
 footer {
-    background: lightblue;
+    color: white;
+    background: black;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -62,8 +62,13 @@ footer {
     text-align: center;
 }
 
+header a {
+    color: white;
+}
+
+
 header {
-        box-shadow: 2px  2px 2px black;
+        box-shadow: 0px  8px 8px gray;
 }
 
 /*have title take up whole line*/
@@ -95,6 +100,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    border-bottom: black 2px solid;
 }
 
 .welcome h2 {
@@ -108,7 +114,6 @@ header {
     
     .welcome {
         align-items: center;
-        border-bottom: black 2px solid;
     }
     
     .welcome h2 {
@@ -129,14 +134,14 @@ header {
     justify-content: center;
     text-align: center;
     flex:1;
+    color: black;
 }
 
 /*styles for each recipe category item*/
 .item {
-    margin-bottom: 0;
+
     padding: 0;
     width: 50%;
-    background-image: url(img/pancake.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom: black 2px solid;
@@ -147,39 +152,36 @@ header {
 
 .breakfast {
     background-image: url(img/breakfast.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .lunch {
     background-image: url(img/lunch.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .dinner {
     background-image: url(img/dinner.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .desert {
     background-image: url(img/cake.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .side {
     background-image: url(img/side.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .cocktail {
     background-image: url(img/cocktail.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
+
+.item h2 {
+    color: black;
+    background: white;
+    padding: 10px;
+    margin-top: 0;
+}
+
+
 
 @media (min-width: 769px) {
     
@@ -206,13 +208,22 @@ header {
     padding: 5px 20%;
     margin-top: 5px;
     margin-bottom: 20px;
-    background: lightblue;
+    background:black;
     text-decoration: none;
-    color: black;
-    border-radius: 8px;
-    box-shadow: 2px  2px 2px black;
+    color: white;
+    border-radius: 15px;
     align-content: center;
     flex-basis: 50%;
+}
+
+.jump-button {
+    box-shadow: 10px  8px 8px gray;
+}
+
+@media (min-width: 769px){
+    .item a {
+        box-shadow: 10px  8px 8px gray;
+    }
 }
 
 button {
@@ -235,6 +246,15 @@ button {
     margin: 0;
     padding: 0;
     justify-content: center;
+}
+
+#recipesHTML a {
+    color: black;
+}
+
+.recipeHeader {
+    width: 100%;
+    text-align: center;
 }
 
 @media (min-width: 769px) {
