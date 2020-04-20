@@ -142,27 +142,27 @@ header {
 }
 
 .breakfast {
-    background-image: url(img/breakfast.jpg);
+    background-image: url(../img/breakfast.jpg);
 }
 
 .lunch {
-    background-image: url(img/lunch.jpg);
+    background-image: url(../img/lunch.jpg);
 }
 
 .dinner {
-    background-image: url(img/dinner.jpg);
+    background-image: url(../img/dinner.jpg);
 }
 
 .desert {
-    background-image: url(img/cake.jpg);
+    background-image: url(../img/cake.jpg);
 }
 
 .side {
-    background-image: url(img/side.jpg);
+    background-image: url(../img/side.jpg);
 }
 
 .cocktail {
-    background-image: url(img/cocktail.jpg);
+    background-image: url(../img/cocktail.jpg);
 }
 
 .item h2 {
