@@ -142,27 +142,27 @@ header {
 }
 
 .breakfast {
-    background-image: url(../img/breakfast.jpg);
+    background-image: url(../img/categories/breakfast.jpg);
 }
 
 .lunch {
-    background-image: url(../img/lunch.jpg);
+    background-image: url(../img//categories/lunch.jpg);
 }
 
 .dinner {
-    background-image: url(../img/dinner.jpg);
+    background-image: url(../img//categories/dinner.jpg);
 }
 
 .desert {
-    background-image: url(../img/cake.jpg);
+    background-image: url(../img//categories/cake.jpg);
 }
 
 .side {
-    background-image: url(../img/side.jpg);
+    background-image: url(../img//categories/side.jpg);
 }
 
 .cocktail {
-    background-image: url(../img/cocktail.jpg);
+    background-image: url(../img//categories/cocktail.jpg);
 }
 
 .item h2 {
@@ -232,9 +232,9 @@ button {
 #recipesHTML {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 0 10%;
     padding: 0;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #recipesHTML a {

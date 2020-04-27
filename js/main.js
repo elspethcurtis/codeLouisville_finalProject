@@ -28,7 +28,15 @@ const breakfastRecipes = [
         htmlClass: ' recipeJS'
     },
         {
-        title: "pancakes 3",
+        title: "pancakes 4",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'pancakes 3 link',
+        htmlClass: ' recipeJS'
+    },
+            {
+        title: "pancakes 5",
         image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
@@ -63,6 +71,22 @@ const lunchRecipes = [
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 3 link',
         htmlClass:'recipeJS'
+    },
+        {
+        title: "sandwich 4",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'pancakes 3 link',
+        htmlClass:'recipeJS'
+    },
+        {
+        title: "sandwich 5",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'pancakes 3 link',
+        htmlClass:'recipeJS'
     }
 ]
 
@@ -86,6 +110,22 @@ const dinnerRecipes = [
     
     {
         title: "burger 3",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'pancakes 3 link',
+        htmlClass:'recipeJS'
+    },
+        {
+        title: "burger 4",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'pancakes 3 link',
+        htmlClass:'recipeJS'
+    },
+        {
+        title: "burger 5",
         image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
@@ -120,6 +160,22 @@ const desertRecipes = [
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 3 link',
         htmlClass:'recipeJS'
+    },
+        {
+        title: "cake 4",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'pancakes 3 link',
+        htmlClass:'recipeJS'
+    },
+        {
+        title: "cake 5",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'pancakes 3 link',
+        htmlClass:'recipeJS'
     }
 ]
 
@@ -149,6 +205,22 @@ const sidesRecipes = [
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 3 link',
         htmlClass:'recipeJS'
+    },
+        {
+        title: "side 4",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'pancakes 3 link',
+        htmlClass:'recipeJS'
+    },
+        {
+        title: "side 5",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'pancakes 3 link',
+        htmlClass:'recipeJS'
     }
 ]
 
@@ -173,6 +245,22 @@ const cocktailsRecipes = [
     
     {
         title: "cocktail 3",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'pancakes 3 link',
+        htmlClass:'recipeJS'
+    },
+        {
+        title: "cocktail 4",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'pancakes 3 link',
+        htmlClass:'recipeJS'
+    },
+        {
+        title: "cocktail 5",
         image: "img/pancake.jpeg",
         time: "30 min",
         ingredients: ['item1', 'item2','item3'],
