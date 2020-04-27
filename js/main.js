@@ -26,6 +26,14 @@ const breakfastRecipes = [
         ingredients: ['item1', 'item2','item3'],
         recipe: 'pancakes 3 link',
         htmlClass: ' recipeJS'
+    },
+        {
+        title: "pancakes 3",
+        image: "img/pancake.jpeg",
+        time: "30 min",
+        ingredients: ['item1', 'item2','item3'],
+        recipe: 'pancakes 3 link',
+        htmlClass: ' recipeJS'
     }
 ]
 

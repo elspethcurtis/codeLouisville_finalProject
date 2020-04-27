@@ -274,3 +274,15 @@ button {
     border: black 2px solid;
     border-radius: 8px;
 }
+
+@media (min-width: 769px) {
+    .recipeJS {
+        width: 25%;
+    }
+}
+
+@media (min-width: 960px) {
+    .recipeJS {
+        width: 20%;
+    }
+}
