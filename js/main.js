@@ -2,269 +2,225 @@
 //create arrays of objects where each array is a category and each object is a recipe within that category
 const breakfastRecipes = [
     {
-        title: "pancakes 1",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'https://www.google.com',
+        image: "img//categories/breakfast.jpg",
+        title: "Chia Pudding",
+        time: "20 min",
+        ingredients: ['chia seeds', 'vanilla','coconut milk...'],
+        recipe: 'coming_soon.html',
         htmlClass: ' recipeJS'
     },
     
     {
-        title: "pancakes 2",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 2 link',
+        image: "img//breakfast/blueberry_scone.jpg",
+        title: "Blueberry Scones",
+        time: "55 min",
+        ingredients: ['brown sugar', 'flour','butter...'],
+        recipe: 'coming_soon.html',
         htmlClass: ' recipeJS'
     },
     
     {
-        title: "pancakes 3",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
+        image: "img//breakfast/cinnamon_twists.jpg",
+        title: "Cinnamon Twists",
+        time: "1 hr 30 min",
+        ingredients: ['yeast', 'cinnamon','flour...'],
+        recipe: 'coming_soon.html',
         htmlClass: ' recipeJS'
     },
         {
-        title: "pancakes 4",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
+        image: "img//breakfast/cinnamon_rolls.jpg",
+        title: "Cinnamon Rolls",
+        time: "12 hrs",
+        ingredients: ['flour', 'sugar','cinnamon...'],
+        recipe: 'coming_soon.html',
         htmlClass: ' recipeJS'
     },
-            {
-        title: "pancakes 5",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
+        {
+        image: "img//breakfast/smoothie.jpg",
+        title: "Smoothie",
+        time: "5 min",
+        ingredients: ['strawberries', 'banana','oranges...'],
+        recipe: 'coming_soon.html',
         htmlClass: ' recipeJS'
-    }
-]
-
-const lunchRecipes = [
-    {
-        title: "sandwich 1",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'https://www.google.com',
-        htmlClass:'recipeJS'
-    },
-    
-    {
-        title: "sandwich 2",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 2 link',
-        htmlClass:'recipeJS'
-    },
-    
-    {
-        title: "sandwich 3",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
-        htmlClass:'recipeJS'
-    },
-        {
-        title: "sandwich 4",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
-        htmlClass:'recipeJS'
-    },
-        {
-        title: "sandwich 5",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
-        htmlClass:'recipeJS'
     }
 ]
 
 const dinnerRecipes = [
     {
-        title: "burger 1",
-        image: "img/pancake.jpeg",
+        title: "Fondue",
+        image: "img//dinner/fondue.jpg",
         time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'https://www.google.com',
+        ingredients: ['jarlesburg', 'emmental','bread...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     },
     
     {
-        title: "burger 2",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
+        title: "French Salad",
+        image: "img//dinner/french_potato_salad.jpg",
+        time: "45 min",
+        ingredients: ['green beans', 'potatoes','shallots...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     },
     
     {
-        title: "burger 3",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
+        title: "Teriyaki Chicken",
+        image: "img//dinner/honey_teriyaki_chicken.jpg",
+        time: "1 hr 30 min",
+        ingredients: ['chicken', 'honey','soy sauce...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     },
         {
-        title: "burger 4",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
+        title: "One-pan Meal",
+        image: "img//dinner/sausage_mixed_veggies.jpg",
+        time: "50 min",
+        ingredients: ['sausage', 'red onion','potatoes...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     },
         {
-        title: "burger 5",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
+        title: "Stirfry",
+        image: "img//dinner/stirfry.jpg",
+        time: "55 min",
+        ingredients: ['flank steak', 'carrots','noodles...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     }
 ]
 
 const desertRecipes = [
     {
-        title: "cake 1",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'https://www.google.com',
+        title: "Blueberry Lemon",
+        image: "img//categories/cake.jpg",
+        time: "4 hrs",
+        ingredients: ['blueberries', 'lemons','heavy cream...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     },
     
     {
-        title: "cake 2",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 2 link',
+        title: "Apple Rollovers",
+        image: "img//desserts/apple_rollovers.jpg",
+        time: "45 min",
+        ingredients: ['piecrust', 'apples','cinnamon...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     },
     
     {
-        title: "cake 3",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
+        title: "Chocolate Brioche",
+        image: "img//desserts/chocolate_brioche.jpg",
+        time: "6 hrs",
+        ingredients: ['flour', 'yeast','butter...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     },
         {
-        title: "cake 4",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
+        title: "Holiday Cookies",
+        image: "img//desserts/holiday_cookies.jpg",
+        time: "3 hrs",
+        ingredients: ['flour', 'sugar','butter...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     },
         {
-        title: "cake 5",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
+        title: "Jam Thumbprints",
+        image: "img/desserts/jam_thumbprints.jpg",
+        time: "1 hr 30 min",
+        ingredients: ['flour', 'jam','sugar'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     }
 ]
 
 const sidesRecipes = [
     {
-        title: "side 1",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'https://www.google.com',
+        title: "Asparagus Salad",
+        image: "img//sides/asparagus_salad.jpg",
+        time: "1 hr",
+        ingredients: ['asparagus', 'shallots','feta...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     },
     
     {
-        title: "side 2",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 2 link',
+        title: "Brioche",
+        image: "img//sides/brioche.jpg",
+        time: "6 hrs",
+        ingredients: ['flour', 'eggs','yeast...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     },
     
     {
-        title: "side 3",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
+        title: "Pesto Twist",
+        image: "img//sides/pesto_twist.jpg",
+        time: "6 hrs",
+        ingredients: ['flour', 'eggs','pesto...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     },
         {
-        title: "side 4",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
+        title: "Pickled Cucumbers",
+        image: "img//sides/pickled_cucumbers.jpg",
+        time: "1 hr 30 min",
+        ingredients: ['cucumbers', 'salt','gochujang...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     },
         {
-        title: "side 5",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
+        title: "Pickled Eggs",
+        image: "img//sides/pickled_eggs.jpg",
+        time: "24 hrs",
+        ingredients: ['eggs', 'soy sauce','green onions...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     }
 ]
 
 const cocktailsRecipes = [
     {
-        title: "cocktail 1",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'https://www.google.com',
+        title: "Bitter Delight",
+        image: "img//categories/cocktail.jpg",
+        time: "15 min",
+        ingredients: ['gin', 'limoncello','aperol...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     },
     
     {
-        title: "cocktail 2",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 2 link',
+        title: "Apple Spice",
+        image: "img//cocktails/apple_spice.jpg",
+        time: "10 min",
+        ingredients: ['bourbon', 'bitters','apple butter...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     },
     
     {
-        title: "cocktail 3",
-        image: "img/pancake.jpeg",
+        title: "French 75",
+        image: "img//cocktails/french75.jpg",
         time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
+        ingredients: ['gin', 'prosecco','lemons...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     },
         {
-        title: "cocktail 4",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
+        title: "Manhattan",
+        image: "img//cocktails/manhattan.jpg",
+        time: "10 min",
+        ingredients: ['bourbon', 'sweet vermouth','bitters...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     },
         {
-        title: "cocktail 5",
-        image: "img/pancake.jpeg",
-        time: "30 min",
-        ingredients: ['item1', 'item2','item3'],
-        recipe: 'pancakes 3 link',
+        title: "Daquiri",
+        image: "img//cocktails/daquiri.jpg",
+        time: "15 min",
+        ingredients: ['white rum', 'raspberries','limes...'],
+        recipe: 'coming_soon.html',
         htmlClass:'recipeJS'
     }
 ]
@@ -273,10 +229,10 @@ const cocktailsRecipes = [
 
 function buildUpHtml(recipeCategory) {
             let htmlRecipes = `<div class="${recipeCategory.htmlClass}">`;
-            htmlRecipes += `<h2>${recipeCategory.title}</h2>`;
             htmlRecipes += `<img src= "${recipeCategory.image}">`;
-            htmlRecipes += `<h3><i class="far fa-clock"></i> ${recipeCategory.time}</h3>`;
-            htmlRecipes += `<h4><i class="fas fa-shopping-basket"></i> ${recipeCategory.ingredients.join(', ')}</h4>`;
+            htmlRecipes += `<h3>${recipeCategory.title}</h3>`;
+            htmlRecipes += `<h4><i class="far fa-clock"></i> ${recipeCategory.time}</h4>`;
+            htmlRecipes += `<h5><i class="fas fa-shopping-basket"></i> ${recipeCategory.ingredients.join(', ')}</h5>`;
             htmlRecipes += `<a href=${recipeCategory.recipe}> <i class="fas fa-link"></i> Recipe Details</a>`;
             htmlRecipes += `</div>`;
     
@@ -295,7 +251,7 @@ function display(recipeCategory) {
 }
 // define all constants for buttons
     const breakfastButton = document.querySelector('.breakfast-button');
-    const lunchButton = document.querySelector('.lunch-button');
+    const appetizerButton = document.querySelector('.appetizer-button');
     const dinnerButton = document.querySelector('.dinner-button');
     const desertButton = document.querySelector('.desert-button');
     const sidesButton = document.querySelector('.sides-button');
@@ -310,9 +266,9 @@ function display(recipeCategory) {
 
 //if lunch button is clicked show lunch recipes 
 
-    lunchButton.addEventListener('click', () => {
-        display(lunchRecipes);
-        $('#recipesHTML').prepend('<h2 class="recipeHeader">Lunch Recipes</h2>');
+    appetizerButton.addEventListener('click', () => {
+        display(appetizersRecipes);
+        $('#recipesHTML').prepend('<h2 class="recipeHeader">Appetizer Recipes</h2>');
 })
 
 ////if dinner button is clicked show dinner recipes

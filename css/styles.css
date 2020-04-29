@@ -145,9 +145,6 @@ header {
     background-image: url(../img/categories/breakfast.jpg);
 }
 
-.lunch {
-    background-image: url(../img//categories/lunch.jpg);
-}
 
 .dinner {
     background-image: url(../img//categories/dinner.jpg);
@@ -232,7 +229,7 @@ button {
 #recipesHTML {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 10%;
+    margin: 0 5%;
     padding: 0;
     justify-content: space-evenly;
 }
