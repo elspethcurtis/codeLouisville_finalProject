@@ -264,13 +264,6 @@ function display(recipeCategory) {
         $('#recipesHTML').prepend('<h2 class="recipeHeader">Breakfast Recipes</h2>'); //added jquery to be able to prepend html <h2> tag
     })
 
-//if lunch button is clicked show lunch recipes 
-
-    appetizerButton.addEventListener('click', () => {
-        display(appetizersRecipes);
-        $('#recipesHTML').prepend('<h2 class="recipeHeader">Appetizer Recipes</h2>');
-})
-
 ////if dinner button is clicked show dinner recipes
 
     dinnerButton.addEventListener('click', () => {
