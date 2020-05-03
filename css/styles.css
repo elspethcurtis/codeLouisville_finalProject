@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-/*GENERAL PAGE*/
+/*GENERAL*/
 body {
     background-color: ;
     margin: 0;
@@ -282,4 +282,13 @@ button {
     .recipeJS {
         width: 20%;
     }
+}
+
+
+
+/*styles for ABOUT and COMING SOON pages*/
+
+.about {
+    margin: 5%;
+    padding: 5%;
 }

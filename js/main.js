@@ -272,11 +272,11 @@ function display(recipeCategory) {
 })
 
 
-////if desert button is clicked show desert recipes 
+////if dessert button is clicked show dessert recipes 
 
     desertButton.addEventListener('click', () => {
         display(desertRecipes);
-        $('#recipesHTML').prepend('<h2 class="recipeHeader">Desert Recipes</h2>');
+        $('#recipesHTML').prepend('<h2 class="recipeHeader">Dessert Recipes</h2>');
 
 })
 
@@ -288,7 +288,7 @@ function display(recipeCategory) {
 
 })
 
-////if desert button is clicked show desert recipes 
+////if cocktail button is clicked show cocktail recipes 
 
     cocktailsButton.addEventListener('click', () => {
         display(cocktailsRecipes);
