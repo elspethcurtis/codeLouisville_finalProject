@@ -7,6 +7,8 @@ My project for Code Louisville is the beginning of a website to hold my favorite
 Currently, I have added one placeholder page link (the coming_soon.html page) for the recipes themselves. Instead of creating numerous HTML pages for every different recipe, I hope to add this feature in the future when I take FullStack JavaScript and can do it in a more efficient manner.
 
 ## Custom CSS Classes: 
+### Note: I designed my project using mobile-first so the CSS rules you see below are for the smallest screen size. In styles.css you will also find media queries for a min-width of 769px and min-width of 960 px which set styles for the below rules at wider widths thus making the page responsive. 
+
 ### General: 
 * body: removes margin, adds flex property to create flexbox parent, sets min height and flex direction to help me create a sticky footer, sets font style
 * a: removes underline from links
