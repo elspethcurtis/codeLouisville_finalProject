@@ -13,36 +13,32 @@ Currently, I have added one placeholder page link (the coming_soon.html page) fo
 * img: hides recipe images up until 769 px wide, rounds their corners
 * .circle: creates a circle which I use on the recipe category images
 
-### header/footer: 
+### Header/Footer: 
 * header/footer: set font to white, background to black, add padding, add flex property to allow them to be both parent and children flex items, use flex-wrap to allow content to move to the next line on smaller width, center content and text to the middle, also give the header a box shadow on the bottom
 * header a: set font of links in header to white
 * .nav icon: allow title (The Amateur Chef) to take up a whole line
 
 ### Welcome paragraph: 
-* .welcome (paragraph div)
-* .welcome h2
-* .welcome p
+* .welcome (paragraph div): add margin, allow div to be flex and flex-wrap, adjust the content to the center, add bottom black border
+* .welcome h2: remove margin from the paragraph header
+* .welcome p: add margin to the bottom of the paragraph
 
 ### Recipe Categories Section: 
-* .recipe-categories
-* .item 
-* .breakfast
-* .dinner
-* .desert
-* .side
-* .cocktail
-* .item h2
-* .jump-button
+* .recipe-categories: make the recipe categories div flex and flex-wrap, align the content to the center, set the flex property to 1 to create sticky footer, set the font the black
+* .item: style each recipe category: remove padding, set the width to 50% at min width, set background image styles to cover and not repeat, set bottom border, align content in the center 
+* .breakfast, .dinner, .desert, .side, .cocktail: set specific background photo for each recipe category at min-width
+* .item h2: set recipe category header to black, with white background, add padding, remove top-margin, adjust flex-basis to have it take up whole width of background image
+* .jump-button/.item a: style the buttons on the page: set the padding/margin, remove underline, round corners, set font to white, background to black, adjust width to have it take up 50% of its parent container, also give the jump to top button a shadow
 * .button
 
 ### Recipe Div Section: 
-* #recipesHTML
-* #recipesHTML a
-* .recipeHeader
-* .recipeJS 
+* #recipesHTML: stile the div for where the JavaScript will print the recipes of each category: make flexbox, allow to wrap, adjust margin, remove padding, space each child evenly
+* #recipesHTML a: set the link in each recipe to black
+* .recipeHeader: style the header of each recipe category that JavaScript displays to the page when the category is clicked: make it take up a whole row and align the text to the center
+* .recipeJS: style each individual recipe that JS displays to the page: center the content, add margin, padding, and width, add a border and round the corners of it 
 
 ### About/Coming Soon pages: 
-* .about
+* .about: add margin and padding to the body content
 
 ## Custom JavaScript Functions: 
 ### buildUpHtml: 
