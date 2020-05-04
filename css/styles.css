@@ -186,6 +186,21 @@ header {
     }
 }
 
+.jumpDiv{
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 100%;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .item a,
 .jump-button {
     padding: 5px 20%;
@@ -207,16 +222,6 @@ header {
     .item a {
         box-shadow: 10px  8px 8px gray;
     }
-}
-
-button {
-    width: 100%;
-    border: none;
-    background: none;
-    font-family: inherit;
-    font-size: 1rem;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 
@@ -246,19 +251,6 @@ button {
     }
 }
 
-/*styles for jump to top div and button*/
-.jumpDiv{
-    display: flex;
-    justify-content: center;
-}
-
-.jump-button {
-    text-align: center;
-    flex-basis: 20%;
-    margin: 20px;
-    padding: 5px 20%;
-}
-
 /*styles for each recipe*/
 .recipeJS {
     justify-content: center;
@@ -280,7 +272,6 @@ button {
         width: 20%;
     }
 }
-
 
 
 /*styles for ABOUT and COMING SOON pages*/
