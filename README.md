@@ -44,4 +44,6 @@ Currently, I have added one placeholder page link (the coming_soon.html page) fo
 ### buildUpHtml: 
 * this function builds up HTML for a category of recipes (since my recipe categories are stored in arrays in JavaScript, building up the content up as HTML allows me to style it easily with CSS)
 ### display: 
-* this function displays a category of recipes to my webpage
+* this function displays a category of recipes (built up in HTML) to my webpage
+### click handlers: 
+* I selected each recipe category button and added an event listener to it so that when a user clicks the button the related recipes will display to the page. I added jQuery to use prepend to add a header to the recipes displayed
