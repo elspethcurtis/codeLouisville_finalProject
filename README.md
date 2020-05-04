@@ -8,10 +8,10 @@ Currently, I have added one placeholder page link (the coming_soon.html page) fo
 
 ## Custom CSS Classes: 
 ### General: 
--body: removes margin, adds flex property to create flexbox parent, sets min height and flex direction to help me create a sticky footer, sets font style
--a: removes underline from links
--img: hides recipe images up until 769 px wide, rounds their corners
--.circle: creates a circle which I use on the recipe category images
+* body: removes margin, adds flex property to create flexbox parent, sets min height and flex direction to help me create a sticky footer, sets font style
+* a: removes underline from links
+* img: hides recipe images up until 769 px wide, rounds their corners
+* .circle: creates a circle which I use on the recipe category images
 
 ### header/footer: 
 -header/footer: set font to white, background to black, add padding, add flex property to allow them to be both parent and children flex items, use flex-wrap to allow content to move to the next line on smaller width, center content and text to the middle, also give the header a box shadow on the bottom
