@@ -45,5 +45,5 @@ Currently, I have added one placeholder page link (the coming_soon.html page) fo
 * .about
 
 ## Custom JavaScript Functions: 
--buildUpHtml: this function builds up HTML for a category of recipes (since my recipe categories are stored in arrays in JavaScript, building up the content up as HTML allows me to style it easily with CSS)
--display: this function displays a category of recipes to my webpage
+* ### buildUpHtml: this function builds up HTML for a category of recipes (since my recipe categories are stored in arrays in JavaScript, building up the content up as HTML allows me to style it easily with CSS)
+* ### display: this function displays a category of recipes to my webpage
