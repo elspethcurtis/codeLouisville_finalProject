@@ -30,8 +30,7 @@ Currently, I have added one placeholder page link (the coming_soon.html page) fo
 * .item: style each recipe category: remove padding, set the width to 50% at min width, set background image styles to cover and not repeat, set bottom border, align content in the center 
 * .breakfast, .dinner, .desert, .side, .cocktail: set specific background photo for each recipe category at min-width
 * .item h2: set recipe category header to black, with white background, add padding, remove top-margin, adjust flex-basis to have it take up whole width of background image
-* .jump-button/.item a: style the buttons on the page: set the padding/margin, remove underline, round corners, set font to white, background to black, adjust width to have it take up 50% of its parent container, also give the jump to top button a shadow
-* .button
+* .jump-button/.item a/.button: style the buttons on the page: set the padding/margin, remove underline, round corners, set font to white, background to black, adjust width to have it take up 50% of its parent container, also give the jump to top button a shadow
 
 ### Recipe Div Section: 
 * #recipesHTML: stile the div for where the JavaScript will print the recipes of each category: make flexbox, allow to wrap, adjust margin, remove padding, space each child evenly
