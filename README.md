@@ -12,7 +12,7 @@ Currently, I have added one placeholder page link (the coming_soon.html page) fo
 ### General: 
 * body: removes margin, adds flex property to create flexbox parent, sets min height and flex direction to help me create a sticky footer, sets font style
 * a: removes underline from links
-* img: hides recipe images up until 769 px wide, rounds their corners
+* img: hides recipe images up until 769px wide, rounds their corners
 * .circle: creates a circle which I use on the recipe category images
 
 ### Header/Footer: 
